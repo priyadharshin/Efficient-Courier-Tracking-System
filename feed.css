@@ -1,0 +1,49 @@
+*{
+margin:0px;
+padding: 0px;
+}
+
+body{
+background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://www.theblogtree.com/wp-content/uploads/PPC-services.jpg);
+background-size:cover;
+background-attachment:fixed;
+font-family:new time roman;
+
+}
+
+h1{
+font-size:25px;
+color:white;
+margin-top:20px;
+margin-bottom:30px;
+}
+.label{
+font-size:19px;
+margin-top:20px;
+font-weight:normal;
+}
+.form-control{
+background:rgba(255,255,255,0.2);
+border:0px;
+border-radius:0px;
+border-bottom:2px solid white;
+font-size:21px;
+color:white;
+margin-top:20px;
+}
+option{
+color:#666;
+}
+.btn-info{
+margin-top:20px;
+margin-left:150px;
+font-size:19px;
+width:120px;
+border-radius:1000px;
+}
+.col-md-6{
+margin-top:150px;
+background:rgba(0,0,0,0.4);
+height:390px;
+box-shadow:-1px 1px 60px 10px black;
+}

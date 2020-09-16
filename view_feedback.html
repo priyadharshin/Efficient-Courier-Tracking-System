@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+	body {
+	background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url("https://images.assetsdelivery.com/compings_v2/litvinovaelena86/litvinovaelena861811/litvinovaelena86181101368.jpg");
+	
+	background-position:center;
+	background-size:cover;
+}
+h2{
+color:white;
+}
+table {
+  width:100%;
+}
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+  color:white;
+}
+table#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+table#t01 th {
+  background-color: black;
+  color: white;
+}
+.search-box{
+position:absolute;
+top:2%;
+left:78%;
+color:white;
+background-color: rgba(0, 0, 0,0.4);
+height:20px;
+border:2px solid gray;
+border-radius:40px;
+padding:10px;
+}
+.search-btn{
+color:blue;
+width:65px;
+height:20px;
+border-radius:5px;
+font-size:15px;
+background:none;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+.search-txt{
+border:none;
+color:white;
+background:none;
+outline:none;
+float:left;
+padding:0;
+font-family:'Merienda';
+font-size:17px;
+transition:0.4s;
+line-height:20px;
+width:155px;
+}
+</style>
+</head>
+<body>
+
+<h2>Feedback</h2>
+<div class="search-box">
+<input class="search-txt" type="text" name="search" placeholder="Type to search">
+<a class="search-btn" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+</div>
+
+<table>
+  <tr>
+   
+    <th>Courier ID</th> 
+   
+    <th>Email Id</th>
+    <th>Suggestion</th>
+  </tr>
+  
+  
+  {% if data is defined %}
+{% for trend in data %}
+ <tr>
+     <td>{{trend[1]}}</td>
+    <td>{{trend[2]}}</td>
+    <td>{{trend[3]}}</td> 
+     
+  </tr>
+ {% endfor %}
+
+{% endif %}
+</table>
+<br>
+
+<table id="t01">
+ 
+</table>
+
+</body>
+</html>

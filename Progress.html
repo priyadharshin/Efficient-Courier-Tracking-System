@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Progress Bars</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" >
+<link rel="stylesheet" type="text/css" href="/static/css/trackstatus.css">
+<style>
+    .bs-example{
+        margin: 50px; 
+        height:250px;
+        border-box:1000px;
+       border-radius:1000px;
+    }
+</style>
+</head>
+
+<div class="container">
+	<div class="row">
+	<div class="col-md-3"></div>
+	<div class="col-md-6">
+	<h1 class="text-center">Track Status</h1>
+	<p></p>
+	<!--- make a row in col-md-6 for label and textbox-->
+	<div class="bs-example">
+    <div class="progress">
+  
+    {% if 'Pick' in data[4] %}
+        <div class="progress-bar bg-danger" style="width: 20%">
+            Pick up 
+            order 
+        </div>
+	{% endif %}
+	
+	{% if 'Packed' in data[4] %}
+	   <div class="progress-bar bg-danger" style="width: 20%">
+            Pick up 
+            order 
+        </div>
+        <div class="progress-bar bg-primary" style="width: 23%">
+            Packed 
+        </div>
+	{% endif %}
+	
+	{% if 'shipped' in data[4] %}
+        <div class="progress-bar bg-danger" style="width: 20%">
+            Pick up 
+            order 
+        </div>
+        <div class="progress-bar bg-primary" style="width: 23%">
+            Packed 
+        </div>
+        <div class="progress-bar bg-dark" style="width: 25%">
+           Shipped
+        </div>
+	{% endif %}
+	
+	{% if 'delivered' in data[4] %}
+	 <div class="progress-bar bg-danger" style="width: 20%">
+            Pick up 
+            order 
+        </div>
+        <div class="progress-bar bg-primary" style="width: 23%">
+            Packed 
+        </div>
+        <div class="progress-bar bg-dark" style="width: 25%">
+           Shipped
+        </div>
+        <div class="progress-bar bg-success" style="width: 35%">
+           delivered 
+        </div>
+	{% endif %}
+</div>
+	<!--close-->
+	    <a href="/"><div class="btn btn-info">Back</div></a>
+     </div>
+	<div class="col-md-3"></div>
+	</div>
+	
+</div>
+
+
+</body>
+</html>
+

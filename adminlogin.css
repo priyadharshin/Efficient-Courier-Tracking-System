@@ -1,0 +1,55 @@
+*{
+margin:0px;
+padding:0px;
+}
+body{
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://assets.productschool.com/wp-content/uploads/2019/03/19120046/additional-resources__job-portal_2x.jpg);
+background-size:cover;
+background-attachment:fixed;
+font-family:new time roman;
+}
+ul{
+margin-bottom:50px;
+}
+ul a{
+font-size:29px;
+color:white;
+}
+ul a:hover{
+text-decoration:none;
+color:gray;
+}
+.label{
+font-size:20px;
+color:white;
+font-weight:normal;
+}
+.form-control{
+background:transparent;
+border-radius:0px;
+border:0px;
+border-bottom:1px solid #f44c89;
+margin-bottom:30px;
+font-size:22px;
+color:white;
+padding:20px;
+}
+.btn-info{
+background:#f44c89;
+border:2px solid #f44c89;
+border-radius:0px;
+width:360px;
+margin-top:20px;
+font-size:20px;
+background:transparent;
+}
+.btn-info a:hover{
+background:#f44c89;
+border:2px solid #f44c89; 
+}
+
+img{
+height:477px;
+width:450px;
+
+}

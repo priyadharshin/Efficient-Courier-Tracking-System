@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" >
+<link rel="stylesheet" type="text/css" href="/static/css/formlogin.css">
+	<title>User Login</title>
+
+</head>
+<body>
+	<div class="container">
+	<div class="row">
+	<div class="col-md-2"></div>
+	<div class="col-md-8">
+	<!---make 2 colum of 6 --->
+	<div class="row" style="margin-top: 120px;box-shadow: -1px 1px 50px 10px black;">
+	<div class="col-md-6">
+	<ul>
+	<a href="#" style="border-bottom:2px solid #f44c89; padding:10px;">Log In </a>
+	<a href="/register.html"> /New Register</a>
+	</ul>
+	
+		<p>{{status}}</p>
+	<form action="/login" method="POST">
+	<label class="label control-label">User name</label>
+	<input type="text" class="form-control" name="username" placeholder="User name" required>
+	<label class="label control-label">Password</label>
+	<input type="password" class="form-control" name="password" placeholder="Password" required>
+	<a href="#"><div class="btn btn-info"><button type="submit" style="color:black;">Submit</button></div></a>
+	<p class="text-center"><a href="#">FORGET PASSWORD?..</a></p>
+	
+	</form>
+	</div>
+	<div class="col-md-6">
+	<img src="https://assets.productschool.com/wp-content/uploads/2019/03/19120046/additional-resources__job-portal_2x.jpg">
+	</div>
+	</div>
+	<!-- close -->
+	</div>
+	<div class="col-md-2"></div>
+	</div>
+	</div>
+
+
+
+
+
+
+
+
+</body>
+</html>

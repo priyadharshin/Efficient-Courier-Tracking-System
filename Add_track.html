@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" >
+<link rel="stylesheet" type="text/css" href="/static/css/Add Track.css">
+<title>Add Track</title>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+	<div class="col-md-3"></div>
+	<div class="col-md-6">
+	
+	<h1 class="text-center">Add Tracking</h1>
+	<!--- make a row in col-md-6 for label and textbox-->
+	
+	<form action="/addTrack" method="post">
+	<label class="label col-md-3 control-label">Courier Id</label>
+	<div class="col-md-9">
+	<input type="text" class="form-control" name="cid" placeholder="Courier Id" required="required" value="{{data[0]}}">
+	</div>
+	<!--close-->
+	<!--- make a row in col-md-6 for label and textbox-->
+	<label class="label col-md-3 control-label">Date</label>
+	<div class="col-md-9">
+	<input type="date" class="form-control" name="date" placeholder="" required="required">
+	</div>
+	<!--close-->
+	<!--- make a row in col-md-6 for label and textbox-->
+	<label class="label col-md-3 control-label">Description</label>
+	<div class="col-md-9">
+	<input type="text" class="form-control" name="description" placeholder="Description" required="required">
+	</div>
+	<!--close-->
+     <a href="#"><div class="btn btn-info"><button type="submit" style="color:black;">Submit</button></div></a>
+     </div>
+	</form>
+	<div class="col-md-3"></div>
+	</div>
+	
+</div>
+
+
+</body>
+</html>

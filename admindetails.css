@@ -1,0 +1,76 @@
+*{
+margin: 0;
+padding: 0 ; 
+font-family:Georgia;
+}
+body{
+width:100%;
+height:100vh;
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://ithraacapital.com/wp-content/uploads/2016/02/slider-3-1140x450.png);
+background-size:cover;
+background-position:center;
+box-sizing:border-box;
+font-family:georgia; 
+}
+.menu-bar{
+text-align:right;
+opacity:0.8;
+display:inline-bloclk;
+}
+.menu-bar ul{
+display:inline-flex;
+list-style:none;
+color:white;
+}
+.menu-bar ul li{
+width:100px;
+padding:15px;
+margin:10px;
+display:inline-block;
+}
+.menu-bar ul li a{
+border:1px solid transparent;
+text-decoration:none;
+color:white;
+
+}
+.active, .menu-bar ul li:hover{
+background:#000;
+border-radius:10px;
+}
+.sub-menu-1{
+display:none;
+}
+
+.menu-bar ul li:hover .sub-menu-1{
+display:inline;
+position:absolute;
+border:1px solid transparent;
+border-radius:10px;
+margin-top:20px;
+margin-left:-110px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+display:inline;
+margin-left:-15px;
+margin:10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+width:1200px;
+padding:10px;
+border-bottom:none;
+border-radius:10px;
+
+text-align:left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+border-bottom:none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+color:#115cd4;
+
+}
+
+
+

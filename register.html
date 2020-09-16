@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" >
+<link rel="stylesheet" type="text/css" href="/static/css/regform.css">
+<title>Register Form</title>
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div class="col-md-7">
+<h1 class="text-left">Register Form</h1>
+<p class="text-left">A registration form is a list of fields that a user will input data into and submit to a company or individual. There are many reasons why you would want a person to fill out a 
+registration form. Companies use registration forms to sign up customers for subscriptions, services, or other programs or plans.</p>
+</div>
+<div class="col-md-5">
+<!-- make a 2 column of 6--->
+<div class="row">
+<div class="col-md-6">
+<h3 class="text-left">Register Here</h3>
+</div>
+<div class="col-md-6">
+<span class="glyphicon glyphicon-pencil"></span></div>
+</div>
+<hr>
+<!--close-->
+ <!-- make another column for textbox and label--->
+ 
+ <form action="/register" method="POST">
+ <div class="row">
+ <label class="label col-md-2 control-label">Name</label>
+ <div class="col-md-10">
+ <input type="text" class="form-control" name="name" placeholder="Name" required="required">
+ </div>
+ </div>
+ 
+ <div class="row">
+ <label class="label col-md-2 control-label">DOB</label>
+ <div class="col-md-10">
+ <input type="date" class="form-control" name="dob" placeholder="Date of Birth" required="required">
+ </div>
+ </div>
+
+ <div class="row">
+ <label class="label col-md-2 control-label">Gender</label>
+ <div class="col-md-10">
+ <input type="radio"  name="gender" value="male"><small>Male</small>
+ <input type="radio"  name="gender" value="female"><small>Female</small>
+ <input type="radio"  name="gender" value="others"><small>Others</small>
+ </div>
+ </div>
+ 
+ <div class="row">
+ <label class="label col-md-2 control-label">E-mail</label>
+ <div class="col-md-10">
+ <input type="email" class="form-control" name="email" placeholder="E-mail" required="required">
+ </div>
+ </div>
+ 
+
+ 
+ <div class="row">
+ <label class="label col-md-2 control-label">Password</label>
+ <div class="col-md-10">
+ <input type="password" class="form-control" name="passwrd" placeholder="Password">
+ </div>
+ </div>
+ 
+
+ 
+ <div class="row">
+ <label class="label col-md-2 control-label">Mobile</label>
+ <div class="col-md-10">
+ <input type="text" class="form-control" name="mobileNo" placeholder="Mobile No" required="required">
+ </div>
+ </div>
+ 
+ <div class="row">
+ <label class="label col-md-2 control-label">City</label>
+ <div class="col-md-10">
+ <input type="city" class="form-control" name="city" placeholder="City" required="required">
+ </div>
+ </div>
+ 
+ <div class="row">
+ <label class="label col-md-2 control-label">Address</label>
+ <div class="col-md-10">
+ <input type="Address" class="form-control" name="address" placeholder="Address" required="required">
+ </div>
+ </div>
+ 
+ <a href="#"><div class="btn btn-info"><button type="submit" style="color:black;">SUBMIT</button></div></a>
+ <a href="#"><div class="btn btn-info">CANCEL</div></a>
+ 
+ </form>
+ <!--close-->
+</div>
+</div>
+</div>
+
+
+</body>
+</html>

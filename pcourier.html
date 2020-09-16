@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" >
+<link rel="stylesheet" type="text/css" href="/static/css/pcourier.css">
+<title>Place a Courier</title>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+	<div class="col-md-3"></div>
+	<div class="col-md-6">
+	<h1 class="text-center">Place a Courier</h1>
+	<!--- make a row in col-md-6 for label and textbox-->
+	<a href="/userpage.html"><div class="btn btn-info">Back</div></a>
+	
+	<form action="/addCourior" method="post">
+	<!--close-->
+	<!--- make a row in col-md-6 for label and textbox-->
+	<label class="label col-md-3 control-label">Sender's Name</label>
+	<div class="col-md-9">
+	<input type="text" class="form-control" name="senderName" value="{{data[0]}}" placeholder="" required="required">
+	</div>
+	<!--close-->
+	<!--- make a row in col-md-6 for label and textbox-->
+	<label class="label col-md-3 control-label">Sender's Mobile</label>
+	<div class="col-md-9">
+	<input type="text" class="form-control" name="senderMobNo" value="{{data[1]}}" placeholder="" required="required">
+	</div>
+	<!--close-->
+	<!--- make a row in col-md-6 for label and textbox-->
+	<label class="label col-md-3 control-label">Sender's City</label>
+	<div class="col-md-9">
+	<input type="text" class="form-control" name="senderCity" placeholder="" value="{{data[2]}}" required="required">
+	</div>
+	<!--close-->
+	<!--- make a row in col-md-6 for label and textbox-->
+	<label class="label col-md-3 control-label">Sender's Address</label>
+	<div class="col-md-9">
+	<input type="text" class="form-control" name="senderAddress" placeholder="" value="{{data[3]}}" required="required">
+	</div>
+	<!--close-->
+	<!--- make a row in col-md-6 for label and textbox-->
+	<label class="label col-md-3 control-label">Recipient's Name</label>
+	<div class="col-md-9">
+	<input type="text" class="form-control" name="recName" placeholder="Recipient's Name" required="required">
+	</div>
+	<!--close-->
+	<!--- make a row in col-md-6 for label and textbox-->
+	<label class="label col-md-3 control-label">Recipient's Mobile</label>
+	<div class="col-md-9">
+	<input type="text" class="form-control" name="recMobile" placeholder="Recipient's Mobile"  required="required">
+	</div>
+	<!--close-->
+	<!--- make a row in col-md-6 for label and textbox-->
+	<label class="label col-md-3 control-label">Recipient's City</label>
+	<div class="col-md-9">
+	<input type="text" class="form-control" name="recCity" placeholder="Recipient's City" required="required">
+	</div>
+	<!--close-->
+	<!--- make a row in col-md-6 for label and textbox-->
+	<label class="label col-md-3 control-label">Recipient's Address</label>
+	<div class="col-md-9">
+	<input type="text" class="form-control" name="recAddrress" placeholder="Recipient's Address" required="required">
+	</div>
+	<!--close-->
+	<!--- make a row in col-md-6 for label and textbox-->
+	<label class="label col-md-3 control-label">Date Time</label>
+	<div class="col-md-9">
+	<input type="datetime-local" class="form-control" name="dateTime" placeholder="" required="required">
+	</div>
+	<!--close-->
+	<!--- make a row in col-md-6 for label and textbox-->
+	<label class="label col-md-3 control-label">Type of Shipment</label>
+	<div class="col-md-9">
+	<select class="form-control" name="ShipmentType" required="required">
+	<option>--SELECT--</option>
+	<option value="parcel">Parcel</option>
+	<option value="goods">Goods</option>
+	<option value="documents">Documents</option>
+	<option value="Frieght">Frieght</option>
+	</select>
+	</div>
+	<!--close-->
+	<!--- make a row in col-md-6 for label and textbox-->
+	<label class="label col-md-3 control-label">Weight</label>
+	<div class="col-md-9">
+	<input type="number" class="form-control" name="weight" placeholder="Weight in kgs" required="required">
+	</div>
+	<!--close-->
+	<!--- make a row in col-md-6 for label and textbox-->
+	<label class="label col-md-3 control-label">Quantity</label>
+	<div class="col-md-9">
+	<input type="number" class="form-control" name="qtny" placeholder="Qnty" required="required">
+	</div>
+	<!--close-->
+	<a href="#"><div class="btn btn-info"><button type="submit" style="color:black;" >Submit</div></a>
+	<a href="#"><div class="btn btn-info">Reset</div></a>
+</form>
+	</div>
+	<div class="col-md-3"></div>
+	</div>
+	
+</div>
+
+
+</body>
+</html>
+
+
